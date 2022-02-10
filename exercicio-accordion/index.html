@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Accordion</title>
+		<meta charset="UTF-8" />
+	</head>
+	<style>
+		#accordion-container {
+			width: 500px;
+			height: 100vh;
+      margin: auto;
+		}
+	</style>
+	<body>
+		<section id="accordion-container">
+      <div>
+        <h3><button onclick="teste()">Eu sou o accordion #1 <span>&#8595;</span></button></h3>
+      </div>
+      <div>
+        <h3><button onclick="teste()">Eu sou o accordion #2 <span>&#8595;</span></button></h3>
+      </div>
+      <div>
+        <h3><button onclick="teste()">Eu sou o accordion #3 <span>&#8595;</span></button></h3>
+      </div>
+      <div>
+        <h3><button onclick="teste()">Eu sou o accordion #4 <span>&#8595;</span></button></h3>
+      </div>
+    </section>
+		<script>
+      function teste(){
+        console.log('funcionei')
+      }
+    </script>
+	</body>
+</html>
