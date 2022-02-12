@@ -8,7 +8,7 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
 - [x] Estrutura de dados e algoritmos
 - [x] Git/Github
 - [x] Primeiros passos para desenvolvimento web
-  - [ ] Accordion (Fazer com JS)
+  - [x] Accordion (Fazer com JS)
 - [x] Criação de website (HTML e CSS)
   - [ ] Site pessoal para praticar o HTML e CSS
 - [x] Páginas com Bootstrap
