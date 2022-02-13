@@ -12,7 +12,7 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
 - [x] Criação de website (HTML e CSS)
   - [x] Site pessoal para praticar o HTML e CSS
 - [x] Páginas com Bootstrap
-  - [ ] Passar o accordion e site pessoal para o bootstrap
+  - [x] Passar o accordion e site pessoal para o bootstrap
 - [ ] Desafio Interface Netflix
 - [x] Instação e cfg (VSCode)
 - [ ] Introdução JS
