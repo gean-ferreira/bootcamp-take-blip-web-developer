@@ -1,0 +1,46 @@
+@media (min-width: 990px) {
+  #app {
+    height: 100vh;
+    overflow: hidden;
+  }
+  #main {
+    height: 90vh;
+    overflow-x: auto;
+  }
+}
+#main {
+}
+#image {
+  border: 2px solid #191970;
+}
+[myButton] {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  margin: 16px 0;
+  border: none;
+  background-color: #e6e6e6;
+  border-radius: 6px;
+}
+[myButton] h3 {
+  margin: 0;
+}
+.accordion-body {
+  border: 1px solid #4e6969;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #f0dba6;
+  display: none;
+}
+footer ul{
+    padding: 0;
+    list-style: none;
+}
+footer ul li{
+    margin: 0 8px;
+}
+
+footer ul a{
+    text-decoration: none;
+}

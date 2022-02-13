@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/72a74eb477.js"
+      crossorigin="myIconLibrary"
+    ></script>
+
+    <title>Meu site - Bootstrap</title>
+  </head>
+  <body>
+    <div id="app" class="container-fluid p-0">
+      <header id="navbar" class="container">
+        <nav class="navbar navbar-expand navbar-light justify-content-end">
+          <ul class="navbar-nav mb-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Atividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Notícias</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container">
+        <div class="row">
+          <div id="main" class="col-12 col-lg-8">
+            <section id="profile">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <img
+                    id="image"
+                    class="rounded-circle col-4"
+                    src="../exercicio-sitePessoal/assets/img/robot.jpg"
+                    alt="Minha imagem"
+                    style="width: 100%"
+                  />
+                </div>
+                <section class="col-12 col-md-8">
+                  <header>
+                    <h1>Gean Ferreira</h1>
+                  </header>
+                  <section>
+                    <header>
+                      <h2>Quem sou eu?</h2>
+                    </header>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Distinctio minus, eius iure asperiores ea odio nam dicta
+                      quasi magnam recusandae, fuga dolor alias! Quo a deserunt
+                      molestias exercitationem amet commodi.
+                    </p>
+                  </section>
+                </section>
+              </div>
+            </section>
+            <section id="activities">
+              <header>
+                <h3>Atividades:</h3>
+              </header>
+              <article>
+                <header>
+                  <h4>Atividade #1</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde perspiciatis in molestias excepturi fugiat laudantium
+                    accusamus ullam dolorem eum, ipsam consectetur ipsa!
+                    Suscipit necessitatibus nulla illo sed, quis ratione
+                    doloribus!
+                  </p>
+                </header>
+              </article>
+              <article>
+                <header>
+                  <h4>Atividade #2</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde perspiciatis in molestias excepturi fugiat laudantium
+                    accusamus ullam dolorem eum, ipsam consectetur ipsa!
+                    Suscipit necessitatibus nulla illo sed, quis ratione
+                    doloribus!
+                  </p>
+                </header>
+              </article>
+              <article>
+                <header>
+                  <h4>Atividade #3</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde perspiciatis in molestias excepturi fugiat laudantium
+                    accusamus ullam dolorem eum, ipsam consectetur ipsa!
+                    Suscipit necessitatibus nulla illo sed, quis ratione
+                    doloribus!
+                  </p>
+                </header>
+              </article>
+            </section>
+            <section>
+              <header>
+                <h3>Hobbies</h3>
+              </header>
+              <div id="accordion-item-1">
+                <header>
+                  <button id="1" onclick="getId(this.id)" myButton>
+                    <h3>Eu sou o accordion #1</h3>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </button>
+                </header>
+                <p class="accordion-body" contentShow="false">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptate itaque, velit ipsum animi porro, vel error ducimus
+                  modi repellendus quis dolor totam cumque quidem. Maxime,
+                  dolorem consequatur. Velit, officiis inventore!
+                </p>
+              </div>
+              <div id="accordion-item-2">
+                <header>
+                  <button id="2" onclick="getId(this.id)" myButton>
+                    <h3>Eu sou o accordion #2</h3>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </button>
+                </header>
+                <p class="accordion-body" contentShow="false">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptate itaque, velit ipsum animi porro, vel error ducimus
+                  modi repellendus quis dolor totam cumque quidem. Maxime,
+                  dolorem consequatur. Velit, officiis inventore!
+                </p>
+              </div>
+              <div id="accordion-item-3">
+                <button id="3" onclick="getId(this.id)" myButton>
+                  <h3>Eu sou o accordion #3</h3>
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <p class="accordion-body" contentShow="false">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptate itaque, velit ipsum animi porro, vel error ducimus
+                  modi repellendus quis dolor totam cumque quidem. Maxime,
+                  dolorem consequatur. Velit, officiis inventore!
+                </p>
+              </div>
+              <div id="accordion-item-4">
+                <header>
+                  <button id="4" onclick="getId(this.id)" myButton>
+                    <h3>Eu sou o accordion #4</h3>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </button>
+                </header>
+                <p class="accordion-body" contentShow="false">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptate itaque, velit ipsum animi porro, vel error ducimus
+                  modi repellendus quis dolor totam cumque quidem. Maxime,
+                  dolorem consequatur. Velit, officiis inventore!
+                </p>
+              </div>
+            </section>
+            <footer class="d-flex flex-column ">
+                <header>
+
+                    <h2 class="text-center">Desenvolvido por Gean Ferreira &#9830</h2>
+                </header>
+              <ul class="d-flex justify-content-center">
+                <a href="https://github.com/geanroberto" target="_blank"
+                  ><li>Github</li></a
+                >
+                <a
+                  href="https://www.linkedin.com/in/gean-ferreira-310937142/"
+                  target="_blank"
+                  ><li>LinkedIn</li></a
+                >
+                <a href="mailto:gean.ferreira147@gmail.com"><li>E-mail</li></a>
+              </ul>
+            </footer>
+          </div>
+          <div class="col-12 col-lg-4 d-flex align-items-center">
+            <aside class="">
+              <article>
+                <header>
+                  <h3>Vamos mudar o mundo?</h3>
+                  <img
+                    src="../exercicio-sitePessoal/assets/img/world.jpg"
+                    alt="Uma pessoal segurando o globo"
+                    style="width: 100%"
+                  />
+                </header>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolores vel accusantium voluptatem ex repudiandae, nisi nihil
+                  amet facere exercitationem cumque vero sapiente nesciunt eius
+                  doloremque minus similique molestias quasi mollitia?
+                </p>
+              </article>
+            </aside>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
