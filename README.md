@@ -8,14 +8,19 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
 - [x] Estrutura de dados e algoritmos
 - [x] Git/Github
 - [x] Primeiros passos para desenvolvimento web
-  - [x] Accordion (Fazer com JS)
+  - [x] Desafio accordion (Fazer com JS)
 - [x] Criação de website (HTML e CSS)
-  - [ ] Site pessoal para praticar o HTML e CSS
+  - [x] Site pessoal para praticar o HTML e CSS
 - [x] Páginas com Bootstrap
   - [ ] Passar o accordion e site pessoal para o bootstrap
-- [ ] Interface Netflix
-- [ ] Instação e cfg (VSCode)
+- [ ] Desafio Interface Netflix
+- [x] Instação e cfg (VSCode)
 - [ ] Introdução JS
+  - [ ] Desafio do contador
+    - [ ] Implemente o método `addEventListener`;
+    - [ ] Crie condicionais que desabilitam o botão de incrementar ou decrementar quando o `count` chegar a um determinado valor (_ex_.: 0 <= count =< 10);
+    - [ ] Mude a cor do texto em `CURRENT_NUMBER` para vermelho quando o número for negativo.
+    Ref.: [Passo a passo proposto](https://github.com/stebsnusch/basecamp-javascript/tree/main/introducao-ao-javascript/contador)
 - [ ] Sintaxe básica
 - [ ] Sintaxe e operadores
 - [ ] Variáveis e tipos
