@@ -1,0 +1,37 @@
+body{
+    max-width: 900px;
+    margin: auto;
+}
+
+#profile{
+    text-align: center;
+}
+
+#image {
+  height: 144px;
+  width: 144px;
+  border-radius: 50%;
+  border: 1px solid #aa3535;
+}
+
+#activities{
+    margin: 0 16px;
+    border: 3px solid #cce6ff;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #ffe6ee;
+}
+
+footer ul{
+    padding: 0;
+    list-style: none;
+}
+
+footer ul a{
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
