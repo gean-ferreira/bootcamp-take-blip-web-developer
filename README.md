@@ -15,14 +15,19 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
   - [x] Passar o accordion e site pessoal para o bootstrap
 - [ ] Desafio Interface Netflix
 - [x] Instação e cfg (VSCode)
-- [ ] Introdução JS
+- [x] Introdução JS
   - [ ] Desafio do contador
     - [ ] Implemente o método `addEventListener`;
     - [ ] Crie condicionais que desabilitam o botão de incrementar ou decrementar quando o `count` chegar a um determinado valor (_ex_.: 0 <= count =< 10);
     - [ ] Mude a cor do texto em `CURRENT_NUMBER` para vermelho quando o número for negativo.
-    Ref.: [Passo a passo proposto](https://github.com/stebsnusch/basecamp-javascript/tree/main/introducao-ao-javascript/contador)
-- [ ] Sintaxe básica
-- [ ] Sintaxe e operadores
+    Ref.: [Passo a passo proposto do exercício](https://github.com/stebsnusch/basecamp-javascript/tree/main/introducao-ao-javascript/contador)
+  - [ ] Desafio ToDo list 
+    - [ ] Crie um campo de `input` de texto e um botão para adicionar a tarefa à lista;
+    - [ ] Quando o botão for pressionado, o texto deve aparecer na lista com um `checkbox` ao lado;
+    - [ ] Quando o usuário selecionar o checkbox, o item correspondente deve ficar com o texto riscado.
+    Ref.: [Passo a passo proposto ToDo list](https://github.com/stebsnusch/basecamp-javascript/tree/main/introducao-ao-javascript/to-do%20list)
+- [x] Sintaxe básica
+- [x] Sintaxe e operadores
 - [ ] Variáveis e tipos
 - [ ] Funções
 - [ ] Coleções
