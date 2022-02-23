@@ -30,4 +30,9 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
 - [x] Sintaxe e operadores
 - [x] Variáveis e tipos
 - [x] Funções
-- [ ] Coleções
+- [x] Coleções
+  - [x] Desafio Map
+    - [x] Crie uma função `getAdmins` que recebe um `Map`;
+    - [x] Crie um Map e popule-o com nomes de usuários e seus papeis no sistema. (Ex: 'Luiz' => 'Admin');
+    - [x] Dentro de `getAdmins`, utilize o loop `for...of` para retornar uma lista com os nomes dos usuários que são administradores.
+    Ref.: [Passo a passo proposto do exercício](https://github.com/stebsnusch/basecamp-javascript/tree/main/colecoes#atividade-1-maps)
