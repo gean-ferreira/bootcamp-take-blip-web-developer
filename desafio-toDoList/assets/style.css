@@ -1,0 +1,14 @@
+body {
+  height: 100vh;
+  width: 500px;
+  margin: auto;
+}
+
+#mylist{
+  height: 100vh;
+  background-color: lightgray;
+  padding: 16px;
+}
+
+.app-todo{
+}

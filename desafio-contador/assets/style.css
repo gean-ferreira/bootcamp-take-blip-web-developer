@@ -1,0 +1,16 @@
+body {
+  height: 100vh;
+  width: 500px;
+  margin: auto;
+}
+
+#contador{
+  height: 100vh;
+  background-color: lightgray;
+  padding: 16px;
+}
+
+.app-contador{
+  display:flex;
+  gap: 8px;
+}
