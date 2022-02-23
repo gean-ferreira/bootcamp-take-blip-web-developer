@@ -28,6 +28,6 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
     Ref.: [Passo a passo proposto ToDo list](https://github.com/stebsnusch/basecamp-javascript/tree/main/introducao-ao-javascript/to-do%20list)
 - [x] Sintaxe básica
 - [x] Sintaxe e operadores
-- [ ] Variáveis e tipos
-- [ ] Funções
+- [x] Variáveis e tipos
+- [x] Funções
 - [ ] Coleções
