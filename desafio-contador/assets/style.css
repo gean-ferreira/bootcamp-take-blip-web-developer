@@ -4,13 +4,15 @@ body {
   margin: auto;
 }
 
-#contador{
+#contador {
   height: 100vh;
   background-color: lightgray;
   padding: 16px;
+  text-align: center;
 }
 
-.app-contador{
-  display:flex;
+.app-contador {
+  display: flex;
+  justify-content: center;
   gap: 8px;
 }

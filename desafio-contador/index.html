@@ -11,14 +11,28 @@
   <body>
     <section id="contador">
       <header>
-        <h1>Contador</h1>
+        <h1>Contadores</h1>
       </header>
-      <div class="app-contador">
-        <button>+</button>
-        <span>0</span>
-        <button>-</button>
-      </div>
+
+      <section>
+        <header><h2>Contador com desabled</h2></header>
+        <div class="app-contador">
+          <button id="add">+</button>
+          <span id="count"></span>
+          <button id="rm">-</button>
+        </div>
+      </section>
+
+      <section>
+        <header><h2>Contador com regra de cores</h2></header>
+        <div class="app-contador">
+          <button id="addCol">+</button>
+          <span id="countCol"></span>
+          <button id="rmCol">-</button>
+        </div>
+      </section>
     </section>
-    <script src="./assets/script.js"></script>
+    <script src="./assets/desabled.js"></script>
+    <script src="./assets/colors.js"></script>
   </body>
 </html>
