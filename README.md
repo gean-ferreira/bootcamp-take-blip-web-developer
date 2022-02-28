@@ -16,10 +16,10 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
 - [ ] Desafio Interface Netflix
 - [x] Instação e cfg (VSCode)
 - [x] Introdução JS
-  - [ ] Desafio do contador
-    - [ ] Implemente o método `addEventListener`;
-    - [ ] Crie condicionais que desabilitam o botão de incrementar ou decrementar quando o `count` chegar a um determinado valor (_ex_.: 0 <= count =< 10);
-    - [ ] Mude a cor do texto em `CURRENT_NUMBER` para vermelho quando o número for negativo.
+  - [x] Desafio do contador
+    - [x] Implemente o método `addEventListener`;
+    - [x] Crie condicionais que desabilitam o botão de incrementar ou decrementar quando o `count` chegar a um determinado valor (_ex_.: 0 <= count =< 10);
+    - [x] Mude a cor do texto em `CURRENT_NUMBER` para vermelho quando o número for negativo.
     Ref.: [Passo a passo proposto do exercício](https://github.com/stebsnusch/basecamp-javascript/tree/main/introducao-ao-javascript/contador)
   - [ ] Desafio ToDo list 
     - [ ] Crie um campo de `input` de texto e um botão para adicionar a tarefa à lista;
