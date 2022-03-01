@@ -11,4 +11,17 @@ body {
 }
 
 .app-todo{
+  margin-bottom: 16px;
+}
+
+.each-task{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+:checked + label {
+  text-decoration: line-through;
+  background-color: red;
 }
