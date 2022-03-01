@@ -21,10 +21,10 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
     - [x] Crie condicionais que desabilitam o botão de incrementar ou decrementar quando o `count` chegar a um determinado valor (_ex_.: 0 <= count =< 10);
     - [x] Mude a cor do texto em `CURRENT_NUMBER` para vermelho quando o número for negativo.
     Ref.: [Passo a passo proposto do exercício](https://github.com/stebsnusch/basecamp-javascript/tree/main/introducao-ao-javascript/contador)
-  - [ ] Desafio ToDo list 
-    - [ ] Crie um campo de `input` de texto e um botão para adicionar a tarefa à lista;
-    - [ ] Quando o botão for pressionado, o texto deve aparecer na lista com um `checkbox` ao lado;
-    - [ ] Quando o usuário selecionar o checkbox, o item correspondente deve ficar com o texto riscado.
+  - [x] Desafio ToDo list 
+    - [x] Crie um campo de `input` de texto e um botão para adicionar a tarefa à lista;
+    - [x] Quando o botão for pressionado, o texto deve aparecer na lista com um `checkbox` ao lado;
+    - [x] Quando o usuário selecionar o checkbox, o item correspondente deve ficar com o texto riscado.
     Ref.: [Passo a passo proposto ToDo list](https://github.com/stebsnusch/basecamp-javascript/tree/main/introducao-ao-javascript/to-do%20list)
 - [x] Sintaxe básica
 - [x] Sintaxe e operadores
