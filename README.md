@@ -36,9 +36,9 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
     - [x] Crie um Map e popule-o com nomes de usuários e seus papeis no sistema. (Ex: 'Luiz' => 'Admin');
     - [x] Dentro de `getAdmins`, utilize o loop `for...of` para retornar uma lista com os nomes dos usuários que são administradores.
     Ref.: [Passo a passo proposto do exercício](https://github.com/stebsnusch/basecamp-javascript/tree/main/colecoes#atividade-1-maps)
-- [ ] Debugging e Error
-- [ ] JS assíncrono
-- [ ] OO
+- [x] Debugging e Error
+- [x] JS assíncrono
+- [x] OO
 - [ ] Map, filter and Reduce
 - [ ] Manipulando o DOM
 
