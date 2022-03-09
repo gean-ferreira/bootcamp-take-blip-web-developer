@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
 
     <title>Netflix Clone</title>
   </head>
   <body>
     <header>
-      <div class="header-container">
+      <div class="container">
         <h2 class="brand">NETFLIX</h2>
         <nav>
           <a href="">Home</a>
@@ -48,11 +52,24 @@
       </div>
     </main>
 
-    <script src="./assets/script.js"></script>
+    <!-- 
+      Take the imgs with JS 
+      in script.js
+    -->
+    <section class="carousel-movies">
+      <div id="carousel" class="owl-carousel owl-theme">
+      </div>
+    </section>
+
     <!-- my-icons-fontawesome -->
     <script
       src="https://kit.fontawesome.com/72a74eb477.js"
       crossorigin="anonymous"
     ></script>
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <!-- my-script -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
