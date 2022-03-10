@@ -11,7 +11,7 @@ for (let i = 1; i <= 11; i++) {
 
 $(".owl-carousel").owlCarousel({
   loop: true,
-  margin: 16,
+  margin: 8,
   nav: false,
   responsive: {
     0: {
