@@ -13,7 +13,7 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
   - [x] Site pessoal para praticar o HTML e CSS
 - [x] Páginas com Bootstrap
   - [x] Passar o accordion e site pessoal para o bootstrap
-- [ ] Desafio Interface Netflix
+- [x] Desafio Interface Netflix
 - [x] Instação e cfg (VSCode)
 - [x] Introdução JS
   - [x] Desafio do contador
@@ -39,6 +39,11 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
 - [x] Debugging e Error
 - [x] JS assíncrono
 - [x] OO
-- [ ] Map, filter and Reduce
-- [ ] Manipulando o DOM
+- [x] Map, filter and Reduce
+- [x] Manipulando o DOM
+- [x] Desafios JS
+- [ ] Jogo de nave
+- [x] MySQL primeiras tabelas
+- [ ] Relacionamentos com workbench
+- [ ] Consultas com Join
 
