@@ -44,6 +44,6 @@ Neste repositório encontra-se todos os exercícios e projetos propostos do boot
 - [x] Desafios JS
 - [ ] Jogo de nave
 - [x] MySQL primeiras tabelas
-- [ ] Relacionamentos com workbench
-- [ ] Consultas com Join
+- [x] Relacionamentos com workbench
+- [x] Consultas com Join
 
