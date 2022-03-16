@@ -13,6 +13,21 @@ function start() {
     setAttributes(div, { id: el, class: `anima${i + 1}` });
     fundoGame.append(div);
   }
+
+  // Função loop
+  let jogo = {};
+  jogo.timer = setInterval(loop, 30);
+
+  function loop() {
+    movefundo();
+  }
+
+  // Função que fará o jogo mover-se
+  let count = 0;
+  function movefundo() {
+    fundoGame.style.backgroundPosition = `${count}px`;
+    count--;
+  }
 }
 
 // Função para adicionar mais de um atributo
