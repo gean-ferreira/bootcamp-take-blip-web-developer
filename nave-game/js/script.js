@@ -16,17 +16,45 @@ function start() {
 
   // Função loop
   let jogo = {};
+  const TECLAS = { UP: 38, DOWN: 40, D: 68 };
+
   jogo.timer = setInterval(loop, 30);
+  jogo.pressionou = [];
+
+  document.addEventListener("keydown", function (e) {
+    console.log(`${e.which} pressionou`);
+    jogo.pressionou[e.which] = true;
+  });
+
+  document.addEventListener("keyup", function (e) {
+    console.log(`${e.which} largou`);
+    jogo.pressionou[e.which] = false;
+  });
 
   function loop() {
     movefundo();
+    movejogador();
   }
 
   // Função que fará o jogo mover-se
   let count = 0;
   function movefundo() {
-    fundoGame.style.backgroundPosition = `${count}px`;
-    count--;
+    fundoGame.style.backgroundPosition = `${count--}px`;
+  }
+
+  // Função que faz o jogador morver-se
+  let movePlayer = 179;
+  const jogador = document.getElementById("jogador");
+  function movejogador() {
+    if (jogo.pressionou[TECLAS.UP]) {
+      jogador.style.top = `${(movePlayer -= 10)}px`;
+    }
+    if (jogo.pressionou[TECLAS.DOWN]) {
+      jogador.style.top = `${(movePlayer += 10)}px`;
+    }
+    if (jogo.pressionou[TECLAS.D]) {
+      //Disparar
+    }
   }
 }
 
