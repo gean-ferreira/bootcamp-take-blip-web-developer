@@ -48,9 +48,19 @@ function start() {
   function movejogador() {
     if (jogo.pressionou[TECLAS.UP]) {
       jogador.style.top = `${(movePlayer -= 10)}px`;
+      // Faz com que o jogador não
+      // Saia da tela pai
+      if (movePlayer <= 5) {
+        jogador.style.top = `${(movePlayer += 10)}px`;
+      }
     }
     if (jogo.pressionou[TECLAS.DOWN]) {
       jogador.style.top = `${(movePlayer += 10)}px`;
+      // Faz com que o jogador não
+      // passe do npc
+      if (movePlayer >= 435) {
+        jogador.style.top = `${(movePlayer -= 10)}px`;
+      }
     }
     if (jogo.pressionou[TECLAS.D]) {
       //Disparar
