@@ -47,6 +47,7 @@ function start() {
   // Função que faz o jogador morver-se
   let movePlayer = 179;
   const jogador = document.getElementById("jogador");
+  let movePlayer = parseInt(window.getComputedStyle(jogador).top);
   function movejogador() {
     if (jogo.pressionou[TECLAS.UP]) {
       jogador.style.top = `${(movePlayer -= 10)}px`;
