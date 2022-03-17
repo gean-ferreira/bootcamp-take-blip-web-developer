@@ -18,16 +18,13 @@ function start() {
   let jogo = {};
   const TECLAS = { UP: 38, DOWN: 40, D: 68 };
 
-  jogo.timer = setInterval(loop, 30);
   jogo.pressionou = [];
 
   document.addEventListener("keydown", function (e) {
-    console.log(`${e.which} pressionou`);
     jogo.pressionou[e.which] = true;
   });
 
   document.addEventListener("keyup", function (e) {
-    console.log(`${e.which} largou`);
     jogo.pressionou[e.which] = false;
   });
 
@@ -45,7 +42,6 @@ function start() {
   }
 
   // Função que faz o jogador morver-se
-  let movePlayer = 179;
   const jogador = document.getElementById("jogador");
   let movePlayer = parseInt(window.getComputedStyle(jogador).top);
   function movejogador() {
