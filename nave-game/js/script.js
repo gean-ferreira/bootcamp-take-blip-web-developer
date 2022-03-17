@@ -14,7 +14,7 @@ function start() {
     fundoGame.append(div);
   }
 
-  // Função loop
+  // Principais variáveis do game
   let jogo = {};
   const TECLAS = { UP: 38, DOWN: 40, D: 68 };
 
@@ -31,6 +31,8 @@ function start() {
     jogo.pressionou[e.which] = false;
   });
 
+  // Função loop
+  jogo.timer = setInterval(loop, 30);
   function loop() {
     movefundo();
     movejogador();
