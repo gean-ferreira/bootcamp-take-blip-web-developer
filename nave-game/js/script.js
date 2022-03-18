@@ -17,6 +17,7 @@ function start() {
   // Principais variáveis do game
   let jogo = {};
   const VELOCIDADE = 6;
+  let posicaoY = parseInt(Math.random() * 334)
   const TECLAS = { UP: 38, DOWN: 40, D: 68 };
 
   jogo.pressionou = [];
@@ -70,9 +71,17 @@ function start() {
 
   //Função que faz mover o inimigo
   const inimigo1 = document.getElementById("inimigo1");
-  let moveInimigo1 = parseInt(window.getComputedStyle(inimigo1).left);
   function moveinimigoHel() {
+    let moveInimigo1 = parseInt(window.getComputedStyle(inimigo1).left);
     inimigo1.style.left = `${(moveInimigo1 -= VELOCIDADE)}px`;
+    inimigo1.style.top = `${posicaoY}px`;
+    console.log(moveInimigo1 + 'fora do if')
+
+    if (moveInimigo1 <= -30) {
+      posicaoY = parseInt(Math.random() * 334)
+      inimigo1.style.left = '694px';
+      inimigo1.style.top = `${posicaoY}px`;
+    }
   }
 }
 
