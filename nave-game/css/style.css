@@ -77,9 +77,69 @@ body {
   margin-top: 100px;
 }
 
-#disparo{
+#disparo {
   width: 50px;
   height: 8px;
   position: absolute;
   background-image: url(../imgs/disparo.png);
+}
+
+#explosao1 {
+  width: 15px;
+  height: 87px;
+  position: absolute;
+}
+
+#explosao2 {
+  width: 15px;
+  height: 87px;
+  position: absolute;
+}
+
+#explosao3 {
+  width: 44px;
+  height: 51px;
+  position: absolute;
+}
+
+#placar {
+  width: 450px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+}
+
+h2 {
+  font-family: Titulo;
+  font-size: 20px;
+  color: #fff;
+}
+
+#energia {
+  width: 140px;
+  height: 38px;
+  position: absolute;
+  left: 0px;
+  top: 7px;
+}
+
+#fim {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#603A03;
+}
+
+#reinicia{
+  cursor: pointer;
 }
