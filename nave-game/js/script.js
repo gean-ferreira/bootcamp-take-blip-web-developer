@@ -18,7 +18,8 @@ function start() {
   let jogo = {};
   const VELOCIDADE = 6;
   const VELOCIDADE_CAM = 3;
-  let posicaoY = parseInt(Math.random() * 334)
+  const VELOCIDADE_AM = 1;
+  let posicaoY = parseInt(Math.random() * 334);
   const TECLAS = { UP: 38, DOWN: 40, D: 68 };
 
   jogo.pressionou = [];
@@ -36,8 +37,9 @@ function start() {
   function loop() {
     movefundo();
     movejogador();
-    moveinimigoHel();
-    moveinimigoCam();
+    moveInimigoHel();
+    moveInimigoCam();
+    moveAmigo();
   }
 
   // Função que fará o jogo mover-se
@@ -73,26 +75,37 @@ function start() {
 
   //Função que faz mover o helicoptero inimigo
   const inimigo1 = document.getElementById("inimigo1");
-  function moveinimigoHel() {
+  function moveInimigoHel() {
     let moveInimigo1 = parseInt(window.getComputedStyle(inimigo1).left);
     inimigo1.style.left = `${(moveInimigo1 -= VELOCIDADE)}px`;
     inimigo1.style.top = `${posicaoY}px`;
 
     if (moveInimigo1 <= -30) {
-      posicaoY = parseInt(Math.random() * 334)
-      inimigo1.style.left = '694px';
+      posicaoY = parseInt(Math.random() * 334);
+      inimigo1.style.left = "694px";
       inimigo1.style.top = `${posicaoY}px`;
     }
   }
 
   //Faz mover o caminhão inimigo
   const inimigo2 = document.getElementById("inimigo2");
-  function moveinimigoCam() {
+  function moveInimigoCam() {
     let moveInimigo2 = parseInt(window.getComputedStyle(inimigo2).left);
     inimigo2.style.left = `${(moveInimigo2 -= VELOCIDADE_CAM)}px`;
 
     if (moveInimigo2 <= 0) {
-      inimigo2.style.left = '785px';
+      inimigo2.style.left = "785px";
+    }
+  }
+
+  //Faz mover o amigo
+  const amigo = document.getElementById("amigo");
+  function moveAmigo() {
+    let moveAmigo = parseInt(window.getComputedStyle(amigo).left);
+    amigo.style.left = `${(moveAmigo += VELOCIDADE_AM)}px`;
+
+    if (moveAmigo >= 910) {
+      amigo.style.left = "0px";
     }
   }
 }
