@@ -15,10 +15,12 @@ function start() {
   }
 
   // Principais variáveis do game
+  let atirar = true;
   let jogo = {};
   const VELOCIDADE = 6;
   const VELOCIDADE_CAM = 3;
   const VELOCIDADE_AM = 1;
+  const VELOCIDADE_BALA = 18;
   let posicaoY = parseInt(Math.random() * 334);
   const TECLAS = { UP: 38, DOWN: 40, D: 68 };
 
@@ -50,26 +52,27 @@ function start() {
 
   // Função que faz o jogador morver-se
   const jogador = document.getElementById("jogador");
-  let movePlayer = parseInt(window.getComputedStyle(jogador).top);
+  let topPosicaoPlayer = parseInt(window.getComputedStyle(jogador).top);
+  let leftPosicaoPlayer = parseInt(window.getComputedStyle(jogador).left);
   function movejogador() {
     if (jogo.pressionou[TECLAS.UP]) {
-      jogador.style.top = `${(movePlayer -= 10)}px`;
+      jogador.style.top = `${(topPosicaoPlayer -= 10)}px`;
       // Faz com que o jogador não
       // Saia da tela pai
-      if (movePlayer <= 5) {
-        jogador.style.top = `${(movePlayer += 10)}px`;
+      if (topPosicaoPlayer <= 5) {
+        jogador.style.top = `${(topPosicaoPlayer += 10)}px`;
       }
     }
     if (jogo.pressionou[TECLAS.DOWN]) {
-      jogador.style.top = `${(movePlayer += 10)}px`;
+      jogador.style.top = `${(topPosicaoPlayer += 10)}px`;
       // Faz com que o jogador não
       // passe do npc
-      if (movePlayer >= 435) {
-        jogador.style.top = `${(movePlayer -= 10)}px`;
+      if (topPosicaoPlayer >= 435) {
+        jogador.style.top = `${(topPosicaoPlayer -= 10)}px`;
       }
     }
     if (jogo.pressionou[TECLAS.D]) {
-      //Disparar
+      disparar();
     }
   }
 
@@ -106,6 +109,38 @@ function start() {
 
     if (moveAmigo >= 910) {
       amigo.style.left = "0px";
+    }
+  }
+
+  //Função que faz o jogador atirar
+  function disparar() {
+    let posicaoDisparoY = topPosicaoPlayer + 50;
+    let posicaoDisparoX = leftPosicaoPlayer + 170;
+    const div = document.createElement("div");
+    setAttributes(div, { id: "disparo" });
+    const disparo = document.getElementById("disparo");
+    let tempoDisparo;
+
+    if (atirar == true) {
+      atirar = false;
+
+      fundoGame.append(div);
+
+      this.disparo.style.top = `${posicaoDisparoY}px`;
+      this.disparo.style.left = `${posicaoDisparoX}px`;
+
+      tempoDisparo = window.setInterval(executaDisparo, 30);
+    }
+
+    function executaDisparo() {
+      this.disparo.style.left = `${(posicaoDisparoX += VELOCIDADE_BALA)}px`;
+
+      if (posicaoDisparoX > 900) {
+        window.clearInterval(tempoDisparo);
+        tempoDisparo = null;
+        this.disparo.remove();
+        atirar = true;
+      }
     }
   }
 }
