@@ -42,6 +42,7 @@ function start() {
     moveInimigoHel();
     moveInimigoCam();
     moveAmigo();
+    colisao();
   }
 
   // Função que fará o jogo mover-se
@@ -143,9 +144,20 @@ function start() {
       }
     }
   }
+
+  function colisao() {
+    colision(amigo);
+  }
 }
 
 // Função para adicionar mais de um atributo
 function setAttributes(el, attrs) {
   for (let key in attrs) el.setAttribute(key, attrs[key]);
+}
+
+function colision(el) {
+  const teste = el.getBoundingClientRect();
+  console.log(
+    `top:${teste.top}, bottom:${teste.bottom}, left:${teste.left}, right:${teste.right}`
+  );
 }
